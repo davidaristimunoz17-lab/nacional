@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Atlético Nacional - Campeón Copa Libertadores 2016 | La Gloria Eterna</title>
+  <meta name="description" content="Tributo interactivo e histórico a la consagración de Atlético Nacional en la Copa Libertadores 2016. Conoce el camino a la segunda corona continental, resultados, estadísticas y héroes verdolagas.">
+  <meta name="keywords" content="Atlético Nacional, Copa Libertadores 2016, Campeón de América, Reinaldo Rueda, Franco Armani, Miguel Borja, Orlando Berrío, Marlos Moreno, Atanasio Girardot, Medellín, Fútbol Colombiano">
+  <meta name="author" content="Atlético Nacional 2016 Memorial">
+  
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Atlético Nacional - Bicampeón de América 2016">
+  <meta property="og:description" content="Revive el histórico título de la Copa Libertadores 2016 de Atlético Nacional de Medellín: 14 partidos, estadísticas, nómina y los momentos más épicos.">
+  <meta property="og:image" content="assets/images/hero-champions.jpg">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Lienzo de Confeti para Celebración -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Encabezado / Navegación -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand-logo" aria-label="Atlético Nacional Inicio">
+        <div class="shield-badge">N</div>
+        <div class="brand-title">
+          <span class="brand-name">
+            ATLÉTICO NACIONAL 
+            <span class="stars-badge">★★</span>
+          </span>
+          <span class="brand-subtitle">Campeón Libertadores 2016</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#historia" class="nav-link">La Mística</a></li>
+          <li><a href="#partidos" class="nav-link">El Camino</a></li>
+          <li><a href="#momentos" class="nav-link">Momentos Épicos</a></li>
+          <li><a href="#heroes" class="nav-link">Los Héroes</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-celebrate" id="btn-celebrate-header" title="Celebrar el título continental">
+          <span>🎉</span>
+          <span>¡Grito de Campeón!</span>
+        </button>
+
+        <button class="mobile-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+      <div class="hero-background">
+        <img src="assets/images/hero-champions.jpg" alt="Festejo de Atlético Nacional campeón Copa Libertadores 2016" class="hero-bg-img">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="tag-dot"></span>
+            <span>27 de Julio de 2016 • La Segunda Corona de América</span>
+          </div>
+
+          <h1 class="hero-title">
+            LA GLORIA ETERNA
+            <span class="hero-title-highlight">BICAMPEÓN CONTINENTAL</span>
+          </h1>
+
+          <p class="hero-description">
+            Veintisiete años después de la epopeya de 1989, el Club Atlético Nacional de Medellín 
+            conquistó Sudamérica con un fútbol lírico, jerarquía implacable y una de las campañas más 
+            dominantes en la historia de la Copa Libertadores.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#partidos" class="btn-primary">
+              <span>Revivir los 14 Partidos</span>
+              <span>↓</span>
+            </a>
+            <button class="btn-secondary" id="btn-hero-celebrate">
+              <span>¡Gritar Campeón! 🏆</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS RIBBON / CIFRAS DE RÉCORD -->
+    <section class="stats-ribbon" aria-label="Estadísticas de la campaña">
+      <div class="container">
+        <div class="stats-grid" id="stats-grid">
+          <!-- Renderizado dinámico vía app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: HISTORIA & MÍSTICA -->
+    <section class="section" id="historia">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Legado y Orgullo</span>
+          <h2 class="section-title">El Ballet Verdolaga de <span>Reinaldo Rueda</span></h2>
+          <p class="section-subtitle">
+            Un equipo diseñado para hacer historia, combinando la mística paisa con precisión táctica, posesión dominante y contundencia ofensiva.
+          </p>
+        </div>
+
+        <div class="history-layout">
+          <div class="history-text">
+            <h3>27 años después, el continente volvió a rendirse ante Medellín</h3>
+            <p>
+              El 2016 quedará grabado con letras doradas en la historia del fútbol sudamericano. Bajo la dirección magistral de <strong>Reinaldo Rueda</strong> y <strong>Bernardo Redín</strong>, Atlético Nacional desplegó un fútbol de ensueño que enamoró al continente entero.
+            </p>
+            <p>
+              Desde el imponente 0-2 en Buenos Aires hasta la noche inolvidable del 27 de julio en un Atanasio Girardot colmado por 48.000 hinchas, el equipo demostró un dominio abrumador: invicto en su grupo sin recibir gol, remontada agónica en el 90+5 ante Rosario Central y cuatro goles estelares de Miguel Ángel Borja a São Paulo.
+            </p>
+
+            <div class="history-highlights">
+              <div class="highlight-box">
+                <h4>⭐ Fútbol Lírico</h4>
+                <p>Posesión paciente, transiciones vertiginosas y toque de primera con Macnelly, Guerra y Marlos.</p>
+              </div>
+              <div class="highlight-box">
+                <h4>🛡️ Muralla Verde</h4>
+                <p>Apenas 6 goles recibidos en 14 partidos y 8 arcos invictos custodiados por Franco Armani.</p>
+              </div>
+              <div class="highlight-box">
+                <h4>⚡ Potencia Joven</h4>
+                <p>Eclosión de joyas de exportación mundial como Davinson Sánchez, Marlos Moreno y Sebastián Pérez.</p>
+              </div>
+              <div class="highlight-box">
+                <h4>👑 Jerarquía Total</h4>
+                <p>Capitaneados por Alexis Henríquez, el único colombiano bicampeón de América con dos camisetas distintas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-visual">
+            <div class="trophy-frame">
+              <img src="assets/images/trophy-gloria.jpg" alt="Trofeo de la Copa Libertadores en oro y verde" class="trophy-img">
+              <div class="floating-trophy-badge">
+                <div>
+                  <div class="title">Copa Libertadores 2016</div>
+                  <div class="subtitle">Club Atlético Nacional S. A.</div>
+                </div>
+                <div class="star-icon">🏆</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: EL CAMINO A LA GLORIA / PARTIDOS -->
+    <section class="section" id="partidos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">El Camino Partido a Partido</span>
+          <h2 class="section-title">Los 14 Encuentros de la <span>Campaña Inolvidable</span></h2>
+          <p class="section-subtitle">
+            Filtra por cada una de las fases del torneo, examina los marcadores, goleadores y consulta la ficha técnica completa de cada encuentro.
+          </p>
+        </div>
+
+        <!-- Filtros Dinámicos -->
+        <div class="timeline-filters-wrapper">
+          <div class="timeline-filters" id="timeline-filters">
+            <!-- Renderizado dinámico vía app.js -->
+          </div>
+        </div>
+
+        <!-- Cuadrícula de Partidos -->
+        <div class="matches-grid" id="matches-grid">
+          <!-- Renderizado dinámico vía app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: MOMENTOS ÉPICOS -->
+    <section class="section" id="momentos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Hitos Inolvidables</span>
+          <h2 class="section-title">Noches que Forjaron la <span>Leyenda</span></h2>
+          <p class="section-subtitle">
+            Cuatro instantes eternos que marcaron a fuego el trayecto hacia la cima del continente.
+          </p>
+        </div>
+
+        <div class="moments-grid">
+          <div class="moment-card">
+            <div class="moment-icon-box">🛡️</div>
+            <h3 class="moment-title">Cerrojo Imbatible</h3>
+            <div class="moment-subtitle">Fase de Grupos Perfecta</div>
+            <p class="moment-desc">
+              Cinco victorias consecutivas iniciales y cero goles concedidos. El cerrojo de Franco Armani y una defensa coordinada de memoria fijaron un récord moderno en Conmebol.
+            </p>
+          </div>
+
+          <div class="moment-card">
+            <div class="moment-icon-box">⚡</div>
+            <h3 class="moment-title">El Milagro del Minuto 95</h3>
+            <div class="moment-subtitle">Rosario Central (3-1)</div>
+            <p class="moment-desc">
+              La noche más dramática del Atanasio Girardot. Nacional requería 3 goles y en el último segundo del tiempo extra, Orlando Berrío empujó la pelota que hizo temblar toda la ciudad.
+            </p>
+          </div>
+
+          <div class="moment-card">
+            <div class="moment-icon-box">🔥</div>
+            <h3 class="moment-title">El Bautismo de Borja</h3>
+            <div class="moment-subtitle">4 Goles al São Paulo</div>
+            <p class="moment-desc">
+              Llegó en semifinales y silenció a más de 60.000 hinchas en el mítico Morumbí con un doblete fulminante. Una semana después repitió dos tantos en Medellín para asegurar la final.
+            </p>
+          </div>
+
+          <div class="moment-card">
+            <div class="moment-icon-box">🏆</div>
+            <h3 class="moment-title">El Pitazo de la Gloria</h3>
+            <div class="moment-subtitle">27 de Julio de 2016</div>
+            <p class="moment-desc">
+              Gol tempranero de Borja al minuto 9 y atajadas memorables de Armani. El pitazo de Néstor Pitana desató el llanto y el júbilo de millones de colombianos en el planeta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: LOS HÉROES / EL PLANTEL -->
+    <section class="section" id="heroes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">El Plantel Inmortal</span>
+          <h2 class="section-title">Los Héroes de la <span>Segunda Corona</span></h2>
+          <p class="section-subtitle">
+            Conoce a los guerreros verdolagas y al estratega que llevaron la bandera colombiana a lo más alto del fútbol de América.
+          </p>
+        </div>
+
+        <div class="heroes-grid" id="heroes-grid">
+          <!-- Renderizado dinámico vía app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE DETALLES DEL PARTIDO -->
+  <div class="modal-overlay" id="match-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+      <div id="modal-dynamic-content">
+        <!-- Rellenado dinámico vía openMatchModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Club Atlético Nacional S. A.</h4>
+          <p>
+            Sitio web conmemorativo desarrollado en honor a la gesta de la Copa Libertadores de América 2016. Construido con HTML5, CSS3 y JavaScript puro en homenaje a la mejor afición del país.
+          </p>
+          <div style="margin-top: 1rem; color: var(--gold-primary); font-weight: 700; font-size: 0.9rem;">
+            ★ 1989 &bull; ★ 2016 &bull; Bicampeones de América
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegación</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#historia">La Mística 2016</a></li>
+            <li><a href="#partidos">Los 14 Partidos</a></li>
+            <li><a href="#momentos">Momentos Épicos</a></li>
+            <li><a href="#heroes">Plantel Campeón</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Gesta Histórica</h5>
+          <ul class="footer-links">
+            <li><span>🏆 2da Copa Libertadores</span></li>
+            <li><span>⚽ 25 Goles a Favor</span></li>
+            <li><span>🛡️ 8 Vallas Invictas</span></li>
+            <li><span>🌟 Alejandro Guerra (MVP)</span></li>
+            <li><span>👔 DT Reinaldo Rueda</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2016 - 2026 Atlético Nacional Tributo Libertadores. Todos los derechos reservados.
+        </div>
+        <div>
+          Medellín, Antioquia, Colombia &bull; Orgullo Verdolaga
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
